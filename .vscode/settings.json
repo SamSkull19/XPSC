@@ -9,6 +9,8 @@
         "string": "cpp",
         "vector": "cpp",
         "iosfwd": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "algorithm": "cpp",
+        "random": "cpp"
     }
 }
