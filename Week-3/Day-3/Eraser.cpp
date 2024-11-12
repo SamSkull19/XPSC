@@ -15,24 +15,17 @@ int main(){
         string s;
         cin >> s;
 
-        int l = 0, r = 0;
-        int cnt = 0, mn = INT_MAX;
+        int r = 0;
+        int cnt = 0;
 
         while(r < n){
-            if(s[r] == 'W'){
+            if(s[r] == 'B'){
                 cnt++;
-            }
-
-            if(r - l + 1 == k){
-                mn = min(mn, cnt);
-                if(s[l] == 'W'){
-                    cnt--;
-                }
-                l++;
+                r += k-1;
             }
             r++;
         }
-        cout << mn << endl;
+        cout << cnt << endl;
     }
     return 0;
 }
