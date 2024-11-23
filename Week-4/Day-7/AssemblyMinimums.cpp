@@ -29,7 +29,6 @@ int main(){
             r--;
             l++;
         }
-
         for(auto i : ans){
             cout << i << " ";
         }
