@@ -21,7 +21,6 @@ int main(){
             cnt += (1LL << (len - i - 1));
         }
     }
-
     cout << cnt + 1 << endl;
     return 0;
 }
