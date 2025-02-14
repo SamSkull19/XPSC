@@ -30,7 +30,8 @@ vector<vector<int>> subsetsWithDup(vector<int>& nums) {
     vector <vector<int>> ans;
     vector <int> a;
     int n = nums.size();
-
+    
+    sort(nums.begin(), nums.end());
     subsetFind(0, ans, a, nums, n);
     return ans;
 }
